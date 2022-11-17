@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FAUZAN-L340"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-19 02:10:03 PM"/>
+        <attribute name="created" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0wOS0xOTswMToyMjoyNyBQTTsyNzMz"/>
+        <attribute name="edited" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0wOS0xOTswMjoxMDowMyBQTTs0OzI4MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, bagi, kali, sisa" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="bagi" expression="(n-4)/7"/>
+            <assign variable="kali" expression="bagi*7"/>
+            <assign variable="sisa" expression="(n-4)-kali"/>
+            <if expression="(sisa=0)">
+                <then>
+                    <output expression="&quot;Minggu&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(sisa=1)">
+                        <then>
+                            <output expression="&quot;Senin&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(sisa=2)">
+                                <then>
+                                    <output expression="&quot;Selasa&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="(sisa=3)">
+                                        <then>
+                                            <output expression="&quot;Rabu&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="(sisa=4)">
+                                                <then>
+                                                    <output expression="&quot;Kamis&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="(sisa=5)">
+                                                        <then>
+                                                            <output expression="&quot;Jumat&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="(sisa=6)">
+                                                                <then>
+                                                                    <output expression="&quot;Sabtu&quot;" newline="True"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

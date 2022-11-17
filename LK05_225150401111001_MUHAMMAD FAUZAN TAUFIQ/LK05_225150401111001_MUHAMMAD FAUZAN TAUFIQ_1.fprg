@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FAUZAN-L340"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-21 03:06:12 PM"/>
+        <attribute name="created" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0wOS0yMTswMTozMjowNiBQTTsyNzI0"/>
+        <attribute name="edited" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0wOS0yMTswMzowNjoxMiBQTTs0OzI4MzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, n, x, penjumlahan" type="Integer" array="False" size=""/>
+            <input variable="m"/>
+            <input variable="n"/>
+            <assign variable="penjumlahan" expression="0"/>
+            <for variable="x" start="1" end="m" direction="inc" step="1">
+                <assign variable="penjumlahan" expression="penjumlahan+n"/>
+            </for>
+            <output expression="penjumlahan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

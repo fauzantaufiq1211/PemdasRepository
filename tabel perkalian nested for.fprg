@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Azka Ayubi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-26 10:10:14 PM"/>
+        <attribute name="created" value="QXprYSBBeXViaTtMQVBUT1AtQTRHODJRVkg7MjAyMi0xMC0yNjswMToyNjoyNiBBTTszMjMy"/>
+        <attribute name="edited" value="QXprYSBBeXViaTtMQVBUT1AtQTRHODJRVkg7MjAyMi0xMC0yNjswMzoxNzoxMCBBTTsxOzMzMzU="/>
+        <attribute name="edited" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0xMC0yNjsxMDoxMDoxNCBQTTsxOzI4MjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, kolom, row" type="Integer" array="False" size=""/>
+            <output expression="&quot;x| &quot;" newline="False"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="i&amp;&quot;| &quot;" newline="False"/>
+            </for>
+            <output expression="&quot;&quot;" newline="True"/>
+            <for variable="row" start="1" end="10" direction="inc" step="1">
+                <output expression="row&amp;&quot;| &quot;" newline="False"/>
+                <for variable="kolom" start="1" end="10" direction="inc" step="1">
+                    <output expression="(row*kolom)&amp;&quot;| &quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

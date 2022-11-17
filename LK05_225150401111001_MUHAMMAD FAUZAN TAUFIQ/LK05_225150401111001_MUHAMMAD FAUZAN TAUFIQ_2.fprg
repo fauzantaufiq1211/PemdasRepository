@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FAUZAN-L340"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-26 09:47:25 AM"/>
+        <attribute name="created" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0wOS0yMTswMTozMjowNiBQTTsyNzI0"/>
+        <attribute name="edited" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0xMC0yNjswOTo0NzoyNSBBTTs3OzI4MzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, n, x, pembagian" type="Integer" array="False" size=""/>
+            <input variable="m"/>
+            <input variable="n"/>
+            <assign variable="pembagian" expression="0"/>
+            <for variable="x" start="m" end="1" direction="dec" step="n">
+                <assign variable="pembagian" expression="pembagian+1"/>
+            </for>
+            <output expression="pembagian" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FAUZAN-L340"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-09 07:22:27 PM"/>
+        <attribute name="created" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0xMS0wOTswNzowNTo0NCBQTTsyNzMx"/>
+        <attribute name="edited" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0xMS0wOTswNzoyMjoyNyBQTTsxOzI4Mzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bil1, bil2, hasil" type="Integer" array="False" size=""/>
+            <input variable="bil1"/>
+            <input variable="bil2"/>
+            <assign variable="hasil" expression="minNumber(bil1,bil2)"/>
+            <output expression="&quot;Nilai terkecil adalah: &quot;" newline="False"/>
+            <output expression="hasil" newline="True"/>
+        </body>
+    </function>
+    <function name="minNumber" type="Integer" variable="min">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+            <parameter name="y" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="min" type="Integer" array="False" size=""/>
+            <if expression="x&lt;y">
+                <then>
+                    <assign variable="min" expression="x"/>
+                </then>
+                <else>
+                    <assign variable="min" expression="y"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

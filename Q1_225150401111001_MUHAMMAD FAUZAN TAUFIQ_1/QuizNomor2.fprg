@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Azka Ayubi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-11 11:31:07 AM"/>
+        <attribute name="created" value="QXprYSBBeXViaTtMQVBUT1AtQTRHODJRVkg7MjAyMi0xMC0xMTsxMDo0MjozMSBBTTszMjIw"/>
+        <attribute name="edited" value="QXprYSBBeXViaTtMQVBUT1AtQTRHODJRVkg7MjAyMi0xMC0xMTsxMToxNDo1NSBBTTsxOzMzMzQ="/>
+        <attribute name="edited" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0xMC0xMTsxMTozMTowNyBBTTsxOzI4MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="gunting, batu, kertas, pilihan, komputer, hasil" type="Integer" array="False" size=""/>
+            <assign variable="gunting" expression="0"/>
+            <assign variable="batu" expression="1"/>
+            <assign variable="kertas" expression="2"/>
+            <output expression="&quot;Memulai program permainan Suit! Masukkan angka! (Gunting = 0, Batu = 1, Kertas = 2)&quot;" newline="True"/>
+            <input variable="pilihan"/>
+            <while expression="pilihan != 0 and pilihan != 1 and pilihan != 2">
+                <output expression="&quot;Angka yang tersedia hanya 0, 1, dan 2. Silahkan isi ulang!&quot;" newline="True"/>
+                <input variable="pilihan"/>
+            </while>
+            <if expression="pilihan = 0">
+                <then>
+                    <assign variable="komputer" expression="random(3)"/>
+                    <output expression="&quot;Komputer memilih &quot;&amp;komputer" newline="True"/>
+                    <if expression="komputer = 0">
+                        <then>
+                            <output expression="&quot;Komputer adalah gunting. Kamu juga gunting. Yaaa...imbang&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="komputer = 1">
+                                <then>
+                                    <output expression="&quot;Komputer adalah batu. Kamu kalah. Coba lagi yuk&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="komputer = 2">
+                                        <then>
+                                            <output expression="&quot;Komputer adalah kertas. Kamu hebat. Kamu menang&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="pilihan = 1">
+                        <then>
+                            <assign variable="komputer" expression="random(3)"/>
+                            <output expression="&quot;Komputer memilih &quot;&amp;komputer" newline="True"/>
+                            <if expression="komputer = 0">
+                                <then>
+                                    <output expression="&quot;Komputer adalah gunting. Kamu hebat. Kamu menang&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="komputer = 1">
+                                        <then>
+                                            <output expression="&quot;Komputer adalah batu. Kamu juga batu. Yaaa...imbang&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="komputer = 2">
+                                                <then>
+                                                    <output expression="&quot;Komputer adalah kertas. Kamu kalah. Coba lagi yuk&quot;" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="pilihan = 2">
+                                <then>
+                                    <assign variable="komputer" expression="random(3)"/>
+                                    <output expression="&quot;Komputer memilih &quot;&amp;komputer" newline="True"/>
+                                    <if expression="komputer = 0">
+                                        <then>
+                                            <output expression="&quot;Komputer adalah gunting. Kamu kalah. Coba lagi yuk&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="komputer = 1">
+                                                <then>
+                                                    <output expression="&quot;Komputer adalah batu. Kamu hebat. Kamu menang&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="komputer = 2">
+                                                        <then>
+                                                            <output expression="&quot;Komputer adalah kertas. Kamu juga kertas. Yaaa...imbang&quot;" newline="True"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

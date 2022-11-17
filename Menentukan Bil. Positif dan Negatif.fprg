@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-08 09:27:37 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0RFU0tUT1AtSEFFMDdKOTsyMDIyLTA5LTA4OzA5OjAyOjM0IEFNOzI3NjA="/>
+        <attribute name="edited" value="TEVOT1ZPO0RFU0tUT1AtSEFFMDdKOTsyMDIyLTA5LTA4OzA5OjI3OjM3IEFNOzM7Mjg4MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilangan" type="Real" array="False" size=""/>
+            <input variable="Bilangan"/>
+            <if expression="bilangan &gt; 0">
+                <then>
+                    <output expression="&quot;bilangan positif&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="bilangan = 0">
+                        <then>
+                            <output expression="&quot;bilangan 0&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;bilangan negatif&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

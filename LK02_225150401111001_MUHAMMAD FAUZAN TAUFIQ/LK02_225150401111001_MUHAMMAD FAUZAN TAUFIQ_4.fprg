@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FAUZAN-L340"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-20 11:38:26 AM"/>
+        <attribute name="created" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0wOS0xOTswMToyMjoyNyBQTTsyNzMz"/>
+        <attribute name="edited" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0wOS0yMDsxMTozODoyNiBBTTs2OzI4MzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, x, bagi, kali, sisa" type="Integer" array="False" size=""/>
+            <declare name="hari" type="String" array="False" size=""/>
+            <input variable="hari"/>
+            <if expression="(hari=&quot;Minggu&quot;)">
+                <then>
+                    <assign variable="n" expression="0"/>
+                </then>
+                <else>
+                    <if expression="(hari=&quot;Senin&quot;)">
+                        <then>
+                            <assign variable="n" expression="1"/>
+                        </then>
+                        <else>
+                            <if expression="(hari=&quot;Selasa&quot;)">
+                                <then>
+                                    <assign variable="n" expression="2"/>
+                                </then>
+                                <else>
+                                    <if expression="(hari=&quot;Rabu&quot;)">
+                                        <then>
+                                            <assign variable="n" expression="3"/>
+                                        </then>
+                                        <else>
+                                            <if expression="(hari=&quot;Kamis&quot;)">
+                                                <then>
+                                                    <assign variable="n" expression="4"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="(hari=&quot;Jum'at&quot;)">
+                                                        <then>
+                                                            <assign variable="n" expression="5"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="(hari=&quot;Sabtu&quot;)">
+                                                                <then>
+                                                                    <assign variable="n" expression="6"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <input variable="x"/>
+            <assign variable="bagi" expression="(n+x)/7"/>
+            <assign variable="kali" expression="bagi*7"/>
+            <assign variable="sisa" expression="(n+x)-kali"/>
+            <if expression="(sisa=0)">
+                <then>
+                    <output expression="&quot;Minggu&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(sisa=1)">
+                        <then>
+                            <output expression="&quot;Senin&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(sisa=2)">
+                                <then>
+                                    <output expression="&quot;Selasa&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="(sisa=3)">
+                                        <then>
+                                            <output expression="&quot;Rabu&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="(sisa=4)">
+                                                <then>
+                                                    <output expression="&quot;Kamis&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="(sisa=5)">
+                                                        <then>
+                                                            <output expression="&quot;Jumat&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="(sisa=6)">
+                                                                <then>
+                                                                    <output expression="&quot;Sabtu&quot;" newline="True"/>
+                                                                </then>
+                                                                <else/>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

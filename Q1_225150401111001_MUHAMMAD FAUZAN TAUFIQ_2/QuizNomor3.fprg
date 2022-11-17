@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Azka Ayubi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-11 12:04:14 PM"/>
+        <attribute name="created" value="QXprYSBBeXViaTtMQVBUT1AtQTRHODJRVkg7MjAyMi0wOS0wODswNzoyNDowOCBBTTszMjQ0"/>
+        <attribute name="edited" value="QXprYSBBeXViaTtMQVBUT1AtQTRHODJRVkg7MjAyMi0xMC0xMTsxMTo0OTozNiBBTTs3OzMzNDc="/>
+        <attribute name="edited" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0xMC0xMTsxMjowNDoxNCBQTTsxOzI4MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="presensi" type="Integer" array="False" size=""/>
+            <declare name="nilaiHuruf" type="String" array="False" size=""/>
+            <declare name="nilaiAngka, mK" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan Mata kuliah ((1) Pemrograman Dasar; (2) Algoritma dan Struktur Data; (3) Jaringan Komputer)!&quot;" newline="True"/>
+            <input variable="mK"/>
+            <output expression="&quot;Masukkan Nilai Angka&quot;" newline="True"/>
+            <input variable="nilaiAngka"/>
+            <if expression="mK = 1">
+                <then>
+                    <if expression="nilaiAngka &gt; 80 and nilaiAngka &lt;= 100">
+                        <then>
+                            <assign variable="nilaiHuruf" expression="&quot;A&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="nilaiAngka &gt; 75 and nilaiAngka &lt;= 80">
+                                <then>
+                                    <assign variable="nilaiHuruf" expression="&quot;B+&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="nilaiAngka &gt; 69 and nilaiAngka &lt;= 75">
+                                        <then>
+                                            <assign variable="nilaiHuruf" expression="&quot;B&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="nilaiAngka &gt; 60 and nilaiAngka &lt;= 69">
+                                                <then>
+                                                    <assign variable="nilaiHuruf" expression="&quot;C+&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="nilaiAngka &gt; 55 and nilaiAngka &lt;= 60">
+                                                        <then>
+                                                            <assign variable="nilaiHuruf" expression="&quot;C&quot;"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="nilaiAngka &gt; 50 and nilaiAngka &lt;= 55">
+                                                                <then>
+                                                                    <assign variable="nilaiHuruf" expression="&quot;D+&quot;"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="nilaiAngka &gt; 44 and nilaiAngka &lt;= 50">
+                                                                        <then>
+                                                                            <assign variable="nilaiHuruf" expression="&quot;D&quot;"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <assign variable="nilaiHuruf" expression="&quot;E&quot;"/>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <if expression="nilaiHuruf != &quot;D+&quot; or nilaiHuruf != &quot;D&quot; or nilaiHuruf != &quot;E&quot;">
+                        <then>
+                            <output expression="&quot;Nilai mata kuliah Pemrograman Dasar adalah &quot;&amp;nilaiHuruf&amp;&quot;, selamat Anda lulus.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Nilai mata kuliah Pemrograman Dasar adalah &quot;&amp;nilaiHuruf&amp;&quot;, maaf Anda tidak lulus, silakan mengulang kembali.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="mK = 2">
+                        <then>
+                            <if expression="nilaiAngka &gt; 80 and nilaiAngka &lt;= 100">
+                                <then>
+                                    <assign variable="nilaiHuruf" expression="&quot;A&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="nilaiAngka &gt; 75 and nilaiAngka &lt;= 80">
+                                        <then>
+                                            <assign variable="nilaiHuruf" expression="&quot;B+&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="nilaiAngka &gt; 69 and nilaiAngka &lt;= 75">
+                                                <then>
+                                                    <assign variable="nilaiHuruf" expression="&quot;B&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="nilaiAngka &gt; 60 and nilaiAngka &lt;= 69">
+                                                        <then>
+                                                            <assign variable="nilaiHuruf" expression="&quot;C+&quot;"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="nilaiAngka &gt; 55 and nilaiAngka &lt;= 60">
+                                                                <then>
+                                                                    <assign variable="nilaiHuruf" expression="&quot;C&quot;"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="nilaiAngka &gt; 50 and nilaiAngka &lt;= 55">
+                                                                        <then>
+                                                                            <assign variable="nilaiHuruf" expression="&quot;D+&quot;"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="nilaiAngka &gt; 44 and nilaiAngka &lt;= 50">
+                                                                                <then>
+                                                                                    <assign variable="nilaiHuruf" expression="&quot;D&quot;"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <assign variable="nilaiHuruf" expression="&quot;E&quot;"/>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                            <if expression="nilaiHuruf != &quot;D+&quot; or nilaiHuruf != &quot;D&quot; or nilaiHuruf != &quot;E&quot;">
+                                <then>
+                                    <output expression="&quot;Nilai mata kuliah Algoritma dan Struktur Data adalah &quot;&amp;nilaiHuruf&amp;&quot;, selamat Anda lulus.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Nilai mata kuliah Algoritma dan Struktur Data adalah &quot;&amp;nilaiHuruf&amp;&quot;, maaf Anda tidak lulus, silakan mengulang kembali.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="mK = 3">
+                                <then>
+                                    <if expression="nilaiAngka &gt; 80 and nilaiAngka &lt;= 100">
+                                        <then>
+                                            <assign variable="nilaiHuruf" expression="&quot;A&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="nilaiAngka &gt; 75 and nilaiAngka &lt;= 80">
+                                                <then>
+                                                    <assign variable="nilaiHuruf" expression="&quot;B+&quot;"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="nilaiAngka &gt; 69 and nilaiAngka &lt;= 75">
+                                                        <then>
+                                                            <assign variable="nilaiHuruf" expression="&quot;B&quot;"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="nilaiAngka &gt; 60 and nilaiAngka &lt;= 69">
+                                                                <then>
+                                                                    <assign variable="nilaiHuruf" expression="&quot;C+&quot;"/>
+                                                                </then>
+                                                                <else>
+                                                                    <if expression="nilaiAngka &gt; 55 and nilaiAngka &lt;= 60">
+                                                                        <then>
+                                                                            <assign variable="nilaiHuruf" expression="&quot;C&quot;"/>
+                                                                        </then>
+                                                                        <else>
+                                                                            <if expression="nilaiAngka &gt; 50 and nilaiAngka &lt;= 55">
+                                                                                <then>
+                                                                                    <assign variable="nilaiHuruf" expression="&quot;D+&quot;"/>
+                                                                                </then>
+                                                                                <else>
+                                                                                    <if expression="nilaiAngka &gt; 44 and nilaiAngka &lt;= 50">
+                                                                                        <then>
+                                                                                            <assign variable="nilaiHuruf" expression="&quot;D&quot;"/>
+                                                                                        </then>
+                                                                                        <else>
+                                                                                            <assign variable="nilaiHuruf" expression="&quot;E&quot;"/>
+                                                                                        </else>
+                                                                                    </if>
+                                                                                </else>
+                                                                            </if>
+                                                                        </else>
+                                                                    </if>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                    <if expression="nilaiHuruf != &quot;D+&quot; or nilaiHuruf != &quot;D&quot; or nilaiHuruf != &quot;E&quot;">
+                                        <then>
+                                            <output expression="&quot;Nilai mata kuliah Jaringan Komputer adalah &quot;&amp;nilaiHuruf&amp;&quot;, selamat Anda lulus.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Nilai mata kuliah Jaringan Komputer adalah &quot;&amp;nilaiHuruf&amp;&quot;, maaf Anda tidak lulus, silakan mengulang kembali.&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

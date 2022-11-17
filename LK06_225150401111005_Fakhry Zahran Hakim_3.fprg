@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fakhr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-08 04:57:20 PM"/>
+        <attribute name="created" value="ZmFraHI7RkFLSFJZOzIwMjItMTEtMDg7MDI6MjU6MTIgUE07MjI0OQ=="/>
+        <attribute name="edited" value="ZmFraHI7RkFLSFJZOzIwMjItMTEtMDg7MDQ6NTc6MjAgUE07NTsyMzY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, result1, result2" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <assign variable="result1" expression="numA(num1, num2)"/>
+            <assign variable="result2" expression="numB(num1, num2)"/>
+            <output expression="&quot;Nilai 1 adalah : &quot;" newline="False"/>
+            <output expression="result1" newline="True"/>
+            <output expression="&quot;Nilai 2 adalah : &quot;" newline="False"/>
+            <output expression="result2" newline="True"/>
+        </body>
+    </function>
+    <function name="numA" type="Integer" variable="x">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+            <parameter name="y" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <assign variable="x" expression="y"/>
+        </body>
+    </function>
+    <function name="numB" type="Integer" variable="y">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+            <parameter name="y" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <assign variable="y" expression="x"/>
+        </body>
+    </function>
+</flowgorithm>

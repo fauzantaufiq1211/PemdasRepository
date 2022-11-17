@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-06 07:49:23 AM"/>
+        <attribute name="created" value="YW5kYW47QU5EQU5JWlI7MjAyMi0wOS0wNjswNzozNDowMSBBTTsyMzc4"/>
+        <attribute name="edited" value="YW5kYW47QU5EQU5JWlI7MjAyMi0wOS0wNjswNzo0OToyMyBBTTsxOzI0OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Rupiah, Dollar, KursDollar" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan nilai yang ingin dikonversikan&quot;" newline="True"/>
+            <input variable="Rupiah"/>
+            <input variable="Dollar"/>
+            <assign variable="KursDollar" expression="Rupiah*Dollar"/>
+            <output expression="KursDollar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

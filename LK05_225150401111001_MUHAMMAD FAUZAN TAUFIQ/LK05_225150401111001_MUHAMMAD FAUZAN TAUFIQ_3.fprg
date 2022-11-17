@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FAUZAN-L340"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-26 10:03:13 PM"/>
+        <attribute name="created" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0wOS0yMTswMTozMjowNiBQTTsyNzI0"/>
+        <attribute name="edited" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0xMC0yNjsxMDowMzoxMyBQTTs4OzI4MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, n, x, jumlah, loop" type="Integer" array="False" size=""/>
+            <input variable="m"/>
+            <input variable="n"/>
+            <assign variable="jumlah" expression="1"/>
+            <for variable="x" start="1" end="n" direction="inc" step="1">
+                <assign variable="jumlah" expression="jumlah*m"/>
+            </for>
+            <output expression="jumlah" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

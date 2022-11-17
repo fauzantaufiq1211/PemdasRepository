@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fakhr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-08 04:18:33 PM"/>
+        <attribute name="created" value="ZmFraHI7RkFLSFJZOzIwMjItMTEtMDg7MDI6MjU6MTIgUE07MjI0OQ=="/>
+        <attribute name="edited" value="ZmFraHI7RkFLSFJZOzIwMjItMTEtMDg7MDQ6MTg6MzMgUE07MzsyMzY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3, result" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <input variable="num3"/>
+            <assign variable="result" expression="minNumber(num1, num2, num3)"/>
+            <output expression="&quot;Nilai terkecil adalah : &quot;" newline="False"/>
+            <output expression="result" newline="True"/>
+        </body>
+    </function>
+    <function name="minNumber" type="Integer" variable="min">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+            <parameter name="y" type="Integer" array="False"/>
+            <parameter name="z" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="min" type="Integer" array="False" size=""/>
+            <assign variable="min" expression="0"/>
+            <if expression="x &lt; y &amp;&amp; x &lt; z">
+                <then>
+                    <assign variable="min" expression="x"/>
+                </then>
+                <else>
+                    <if expression="y &lt; x &amp;&amp; y &lt; z">
+                        <then>
+                            <assign variable="min" expression="y"/>
+                        </then>
+                        <else>
+                            <if expression="z &lt; x &amp;&amp; z &lt; y">
+                                <then>
+                                    <assign variable="min" expression="z"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-06 07:26:55 AM"/>
+        <attribute name="created" value="YW5kYW47QU5EQU5JWlI7MjAyMi0wOS0wNjswNzoxODowMiBBTTsyMzgx"/>
+        <attribute name="edited" value="YW5kYW47QU5EQU5JWlI7MjAyMi0wOS0wNjswNzoyNjo1NSBBTTsxOzI0OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Un, a, r, n" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="r"/>
+            <input variable="n"/>
+            <assign variable="Un" expression="a*(r^(n-1))"/>
+            <output expression="&quot;Suku ke 8&quot; &amp; Un" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

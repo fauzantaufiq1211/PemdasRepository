@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FAUZAN-L340"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-19 01:22:25 PM"/>
+        <attribute name="created" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0wOS0xOTswMToxMToyMyBQTTsyNzI3"/>
+        <attribute name="edited" value="RkFVWkFOLUwzNDA7RkFVWkFOLUwzNDA7MjAyMi0wOS0xOTswMToyMjoyNSBQTTsxOzI4Mzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="liter" type="Real" array="False" size=""/>
+            <declare name="hargaPertalite, jumlahUang" type="Integer" array="False" size=""/>
+            <assign variable="hargaPertalite" expression="10000"/>
+            <input variable="jumlahUang"/>
+            <assign variable="liter" expression="jumlahUang/hargaPertalite"/>
+            <output expression="&quot; Jumlah Pertalite berjumlah &quot; &amp;liter &amp;&quot; liter &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
